@@ -1,0 +1,125 @@
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+i {
+  vertical-align: bottom;
+}
+.leftalign {
+  margin-left: 5px;
+  float: left;
+}
+.rightalign {
+  margin-right: 5px;
+  float: right;
+}
+.controls {
+  position: relative;
+  float: right;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid;
+  border-color: black;
+  background-color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.player-scores {
+  display: inline-block;
+  padding: 15px;
+}
+.player-scores h4 {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.player-scores h5 {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.score-box {
+  margin-top: 10px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.score {
+  margin: 0px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1000;
+}
+#player1score {
+  color: white;
+}
+.bold-text {
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.player-type-radios {
+  margin-top: 10px;
+}
+#header {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+}
+#container {
+  width: 750px;
+  margin: 0 auto;
+}
+#newGameButton {
+  width: 210px;
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+#boardContainer {
+  float: left;
+}
+#comments {
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  padding: 5px;
+  overflow: auto;
+  text-align: left;
+}
+#board {
+  cursor: default;
+}

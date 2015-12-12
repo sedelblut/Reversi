@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reversi</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
+  <script src="js/functions.js"></script>
+  <script src="js/players.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/computer.js"></script>
+  <script>
+    var canvas = null;
+    var context = null;
+    var gameLoop = null;
+
+    function load() {
+      canvas = document.getElementById("board");
+      context = canvas.getContext("2d");
+      gameLoop = new initGameLoop();
+    }
+    window.onload = load;
+  </script>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Reversi</h1>
+  </div>
+  <div id="container">
+    <div id="boardContainer">
+      <canvas id="board" width="500" height="500"></canvas>
+    </div>
+    <div class="controls">
+      <div class="player-scores">
+        <h4>Player 1</h4>
+        <div class="score-box">
+          <div class="score" id="player1score"></div>
+          <img src="./img/black.svg" />
+        </div>
+        <h5>
+          <div id="player1type"></div>
+        </h5>
+        <form class="player-type-radios">
+          <input type="radio" name="player1Radio" id="player1_human" value="1" checked><i class="material-icons md-dark md-24">person</i>
+          <br>
+          <input type="radio" name="player1Radio" id="player1_computer" value="2"><i class="material-icons md-dark md-24">computer</i>
+        </form>
+      </div>
+      <div class="player-scores">
+        <h4>Player 2</h4>
+        <div class="score-box">
+          <div class="score" id="player2score"></div>
+          <img src="./img/white.svg" />
+        </div>
+        <h5>
+          <div id="player2type"></div>
+        </h5>
+        <form class="player-type-radios">
+          <input type="radio" name="player2Radio" id="player2_human" value="1"><i class="material-icons md-dark md-24">person</i>
+          <br>
+          <input type="radio" name="player2Radio" id="player2_computer" value="2" checked><i class="material-icons md-dark md-24">computer</i>
+        </form>
+      </div>
+      <div class="bold-text leftalign">Comments</div>
+      <div class="rightalign"><i class="material-icons md-dark md-24">chat_bubble_outline</i></div>
+      <div style="clear: both;"></div>
+      <div id="comments">
+        <script>
+          var comments = document.getElementById('comments');
+        </script>
+      </div>
+      <input type="button" id="newGameButton" value="New Game">
+    </div>
+  </div>
+  <script>
+    document.getElementById('newGameButton').addEventListener('click', function() {
+      gameLoop = new initGameLoop();
+    }, false);
+  </script>
+</body>
+
+</html>
